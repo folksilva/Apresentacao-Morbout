@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Timer</title>
+		<link href="css/fonts.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+		<style>
+			body {
+				background-color: #333333;
+				color: #EEEEEE;
+				margin: 0px;
+				text-align: center;
+			}
+			.timer {
+				font: 140px 'TeXGyreAdventorBold','Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+				text-shadow: 2px 2px 4px black, -2px -2px 4px #444444;
+				background-color: #222222;
+				text-align: center;
+				border-radius: 10px;
+				box-shadow: inset 2px 2px 4px black, inset -2px -2px 4px #444444;
+				padding: 10px;
+				margin: 20px;
+				width:600px;
+				display: inline-block;
+			}
+			.total {
+				font: 80px 'TeXGyreAdventorBold','Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+				color: #222222;
+				text-shadow: 1px 1px 2px #444444, -1px -1px 2px black;
+				letter-spacing:3px;
+			}
+			.alert1 {
+				color: orange;
+			}
+			.alert2 {
+				color: #A40000;
+			}
+			.final {
+				background-color: #A40000;
+			}
+			.final .timer { 
+				background-color: red; 
+				box-shadow: inset 2px 2px 4px #6E0000, inset -2px -2px 4px #FF3838;
+				text-shadow: 2px 2px 4px #6E0000, -2px -2px 4px #FF3838;
+			}
+			.final .total { 
+				color: red;
+				text-shadow: 2px 2px 4px #6E0000, -2px -2px 4px #FF3838; 
+			}
+		</style>
+	<head>
+	<body>
+	<div class="timer">
+		00:00
+	</div>
+	<div class="total">00:00</div>
+	
+	<script>
+		
+		var minute = 0;
+		var minuteTotal = 0;
+		var second = 0;
+		var secondTotal = 0;
+		
+		var _timer;
+		
+		var tempo = prompt("Quantos minutos dura a apresentação");
+		minuteTotal = Number(tempo);
+		var parte = Math.round(minuteTotal / 10);
+		minute = parte;
+		
+		function addZero(n){
+			if(n<10){
+				return "0"+n;
+			}
+			return ""+n;
+		}
+		
+		function timer(){
+			second--;
+			secondTotal--;
+			if(second<0){
+				second = 59;
+				secondTotal = 59;
+				minute--;
+				minuteTotal--;
+				$(".timer").removeClass("alert1").removeClass("alert2");
+				if(minute==1){
+					$(".timer").addClass("alert1");
+				}
+				if(minute==0){
+					$(".timer").addClass("alert2");
+				}
+				if(minute<0){
+					minute = parte-1 < 0 ? 0 : parte-1;
+				}
+				if(minuteTotal<0){
+					//minuteTotal == 0;
+					$("body").addClass("final");
+					clearInterval(_timer);
+					return;
+				}
+			}
+			
+			$(".timer").html(addZero(minute) + ":" + addZero(second));
+			$(".total").html(addZero(minuteTotal) + ":" + addZero(secondTotal));
+		}
+		timer();
+		_timer = setInterval(timer,1000);
+	</script>
+	
+	</body>
+</html>

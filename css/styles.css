@@ -1,0 +1,547 @@
+body {
+	background-color: #fff; 
+	font-size: 16px;
+	margin: 0px;
+	text-shadow: 0 1px 2px black;
+	cursor: none;
+	overflow: hidden;
+}
+
+.story {
+	margin: 0 auto;
+	min-width: 980px;
+	width: 100%;
+	display: inline-block;
+	overflow: hidden;
+}
+
+#nav {
+	position: fixed;
+	list-style: none;
+	left: 5px;
+	padding-left: 15px;
+	bottom: 0px;
+	z-index: 3000;
+	transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+}
+
+#nav li { 
+	cursor: pointer;
+	font-size: 14px !important;
+	opacity:0.5; 
+	transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+}
+#nav.contrast-light li:hover, #nav.contrast-light li.li-active {
+	font-weight: bold !important;
+	font-size: 16px !important;
+	opacity:1 !important;
+	color: #234567 !important;
+}
+
+#nav.contrast-dark li:hover, #nav.contrast-dark li.li-active {
+	font-weight: bold !important;
+	font-size: 16px !important;
+	opacity:1 !important;
+	color: white !important;
+}
+
+.contrast-first * {
+	opacity:1 !important;
+}
+.contrast-dark, .contrast-first {
+	color: white;
+	text-shadow: 0 1px 2px black;
+}
+.contrast-light {
+	color: black;
+	text-shadow: 0 1px 2px white;
+}
+
+/* SLIDE 1 */
+#intro {
+	background: url("../images/intro.jpg") 50% 0 no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	z-index: 100;
+}
+.logo {
+	background: url("../images/header_logo.png") 50% 50% no-repeat fixed;
+	height: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+.txt-uni {
+	text-align: right;
+	margin-right: 10px;
+}
+
+/* SLIDE 2 */
+#about-us  {
+	background: url("../images/about-us.jpg") center center no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	z-index: 200;
+}
+
+#about-us div div {
+	color: black;
+	text-shadow: 0 1px 2px white;
+	text-align: right;
+	margin-right: 10px;
+}
+
+#about-us h1 {
+	font-size: 35px !important;
+	line-height: 35px;
+	padding: 0; margin: 0;
+	margin-top: 5px;
+}
+
+/* SLIDE 3 */
+#morbout {
+	background: url("../images/morbout.png") center center no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#morbout .cloud1 {
+	background: url("../images/morbout-cloud.png") 50% 70% no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#morbout .cloud2 {
+	background: url("../images/morbout-cloud-1.png") 10% 70% no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#morbout .cloud3 {
+	background: url("../images/morbout-cloud-2.png") 98% 70% no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#morbout .cloud4 {
+	background: url("../images/morbout-cloud-3.png") 60% 70% no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* SLIDE 4 */
+#cloud {
+	background: url("../images/cloud.jpg") center center no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#cloud .base {
+	background: url("../images/cloud-base.png") 80% 50% no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#cloud .documents {
+	background: url("../images/documents.png") 20% 50% no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#cloud .photos {
+	background: url("../images/photos.png") 35% 50% no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#cloud .friends {
+	background: url("../images/friends.png") 98% 50% no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#cloud .movies {
+	background: url("../images/movies.png") 60% 50% no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* SLIDE 5 */
+#crowd {
+	background: url("../images/crowd.jpg") 50% 0 no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#crowd .tip {
+	background: url("../images/crowd-tip.png") 95% 0 no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+/* SLIDE 6 */
+#porque {
+	background: url("../images/porque.jpg") center center no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#porque .balloon1 {
+	background: url("../images/balloon-1.png") 5% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#porque .balloon2 {
+	background: url("../images/balloon-2.png") 50% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#porque .balloon3 {
+	background: url("../images/balloon-3.png") 95% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#porque .balloon4 {
+	background: url("../images/balloon-4.png") 70% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+
+/* SLIDE 7 */
+#consumidores {
+	background: url("../images/consumidores.png") 60% 0 no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#consumidores .balloon1 {
+	background: url("../images/cons-balloon-1.png") 30% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#consumidores .balloon2 {
+	background: url("../images/cons-balloon-2.png") 95% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#consumidores .balloon3 {
+	background: url("../images/cons-balloon-3.png") 90% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* SLIDE 8 */
+#empresas {
+	background: url("../images/empresas.png") 60% 0 no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#empresas .balloon1 {
+	background: url("../images/empr-1.png") 10% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#empresas .balloon2 {
+	background: url("../images/empr-2.png") 95% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#empresas .balloon3 {
+	background: url("../images/empr-3.png") 60% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* SLIDE 9 */
+#infraestrutura {
+	background: url("../images/cloud.jpg") center center no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#infraestrutura .diagram {
+	background: url("../images/infraestrutura.png") 95% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+
+
+/* SLIDE 10 */
+#fluxo {
+	background: url("../images/cloud.jpg") center center no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#fluxo .globe {
+	background: url("../images/appengine-globe.png") 95% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#fluxo .google {
+	background: url("../images/google.png") 95% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* SLIDE 11 */
+#provisoes {
+	background: url("../images/cloud.jpg") center center no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#provisoes .graph {
+	background: url("../images/provisoes.png") 70% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#provisoes .tip-1 {
+	background: url("../images/prov-tip-1.png") 40% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#provisoes .tip-2 {
+	background: url("../images/prov-tip-2.png") 60% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#provisoes .tip-3 {
+	background: url("../images/prov-tip-3.png") 80% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* SLIDE 12 */
+#perguntas {
+	background: url("../images/intro.jpg") center center no-repeat fixed;
+	color: white;
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#perguntas .slide {
+	height: 398px;
+	width: 610px;
+	background-color: white;
+	margin: 0;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: 15px;
+	padding: 0;
+	border-radius: 3px;
+	box-shadow: 0 0 5px white;
+	position: absolute;
+}
+
+#perguntas .slide .picture {
+	margin: 5px;
+	height: 388px;
+	width: 600px;
+	background: url("../images/slides.png") no-repeat;
+	transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-webkit-transition-duration: 1s;
+	transition-property: background-position;
+	-o-transition-property: background-position;
+	-moz-transition-property: background-position;
+	-webkit-transition-property: background-position;
+}
+
+#perguntas .slide .picture .slideDesc {
+	background-color: rgba(0,0,0,0.5);
+	font-weight: bold;
+	position: absolute;
+	width: 600px;
+	padding: 10px 0;
+	margin-top: 348px;
+}
+
+#perguntas .bottom {
+	background: url("../images/bottom.png") 5% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0;
+	margin-top: -15px;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* MIX */
+#infraestrutura .copyright, #fluxo .copyright, #provisoes .copyright {
+	color: #333333;
+	text-shadow: 0 1px 2px white;
+	text-align: right;
+	font-size: 12px !important;
+	margin: 0;
+	padding: 0;
+	padding-left: 30px;
+	position: absolute;
+	width: 95%;
+	
+}
+
